@@ -1,0 +1,99 @@
+@import 'index.scss';
+
+
+.App {
+  height: $max-height;
+  text-align: center;
+  background-color: #34516E;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+
+.main-screen-container{
+  height: $max-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: $padding-narrow;
+
+    .title{
+      color: $text-color-gray;
+      padding-right: $padding-narrow;
+      font-size: 17px;
+    }
+  }
+
+  .button-section{
+    padding: $padding-wide;
+  }
+}
+
+.result-section{
+  margin: 5%;
+  max-height: 450px;
+  overflow-y: scroll;
+  width: fit-content;
+  align-self: center;
+
+  .ReactTable{
+    color: $text-color-gray;
+    border-radius: 5px;
+
+
+    .rt-thead{
+      text-transform: uppercase;
+
+      .rt-th{
+        input{
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .rt-td{
+      text-transform: capitalize;
+    }
+  }
+}
+
+.item-screen-container {
+  height: $max-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+  .item-additional-info {
+    display: flex;
+    flex-direction: column;
+
+    .property {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      text-transform: capitalize;
+      color: $text-color-white;
+      padding-bottom: 7px;
+      width: calc(100% - 20px);
+
+      .property-key {
+        text-decoration: underline;
+        padding: 0 7px 7px 20px;
+      }
+
+      .property-value{
+        text-align: start;
+      }
+    }
+  }
+}
+
+
+
